@@ -1,0 +1,205 @@
+/* tournaments.css Style for the tournaments page */
+
+* {
+	font-family: "Poppins", sans-serif;
+}
+
+/*Style for the page title*/
+h1 {
+	margin-top: 30px;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+/* Style for the tournaments section */
+#tournaments-section {
+	padding: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/* Border for the all sections except the middle one */
+#tournaments-section:nth-of-type(-n + 2) {
+	border-bottom: 1px solid black;
+}
+
+/* Style for the subtitle */
+.tournaments-type {
+	flex: 0 0 100%;
+	text-align: center;
+	font-size: 22pt;
+}
+
+/* Style for the containers of the title */
+.tournament-container {
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-top: 30px;
+	box-shadow: 5px 5px 15px 0px;
+
+	transition: all 200ms ease;
+}
+
+/*Styling Subtitles in the card*/
+.tournament-container > h3 {
+	color: black;
+	flex: 0 0 100%;
+	margin: 0;
+	text-align: right;
+	font-size: 25px;
+}
+
+/* Style for the title in the tournaments section */
+.tournament-title {
+	font-size: 22pt;
+	font-weight: bold;
+	color: black;
+	flex: 0 0 100%;
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding: 20px 0;
+}
+
+/* Style for the tournament image */
+.tournament-image {
+	object-fit: cover;
+	height: 500px;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+/* Style for each teams name */
+.team-names {
+	background-color: black;
+	padding: 20px;
+	color: white;
+	font-size: 22pt;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex: 0 0 100%;
+	border-bottom: 1px solid black;
+}
+
+/* Style for the team players */
+.tournament-teams {
+	flex: 0 0 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-bottom: 1px solid black;
+}
+
+/* Aligning the palyer names on the right in the second column */
+.tournament-teams ul:nth-of-type(2) {
+	text-align: right;
+}
+
+/* Margin for the lists */
+.tournament-teams ul li {
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+/* Style for the player links */
+.tournament-teams ul li a {
+	padding: 5px;
+	color: black;
+	border-radius: 20px;
+	transition: all 200ms ease;
+}
+
+/* Link hover for the player names */
+.tournament-teams ul li a:hover {
+	color: white;
+	background-color: black;
+}
+
+/* Line that divides the teams*/
+.vertical-line {
+	height: 100%;
+	width: 1px;
+	background-color: black;
+}
+
+/* Style for the info about the tournament at the bottom of the card */
+.tournament-info {
+	background-color: rgb(28, 28, 28);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex: 0 0 100%;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+/* Styling the tournament title */
+.tournament-info h3 {
+	width: 33%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 18pt;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	border-left: 1px solid white;
+	text-align: center;
+}
+
+/* Removing the border of the first title */
+.tournament-info h3:first-of-type {
+	border: none;
+}
+
+/* Changing the color of the highlighted title */
+.tournament-info h3 span {
+	font-size: 11pt;
+	color: #ccc;
+}
+
+/* Small screen */
+@media screen and (max-width: 788px) {
+	.tournament-container {
+		width: 100%;
+	}
+
+	.visible {
+		visibility: hidden;
+	}
+}
+/* Medium screen */
+@media screen and (min-width: 790px) {
+	.tournament-container {
+		width: 45%;
+	}
+
+	.tournament-container:hover {
+		width: 45%;
+	}
+}
+
+/* Big screen */
+@media screen and (min-width: 1124px) {
+	.tournament-container {
+		width: 30%;
+	}
+
+	.tournament-container:hover {
+		width: 33%;
+	}
+}

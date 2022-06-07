@@ -1,0 +1,95 @@
+/* Contacts.css used to style the contacts page */
+
+main {
+	width: 100%;
+	display: flex;
+}
+
+/* Set an image as background of the body */
+body {
+	background-image: url(../img/form-bg.webp);
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Center the form */
+form {
+	margin: 0 auto;
+	width: 450px;
+}
+
+/* Styling the form */
+div#form-join-us {
+	padding: 30px 20px;
+	margin: 10px 15px 15px 10px;
+	/* box-shadow: 0px 0px 10px 5px white; */
+	background-color: rgba(28, 28, 28, 0.897);
+	box-shadow: 10px 10px 15px 0px rgb(51, 51, 51);
+	color: white;
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	border-radius: 20px;
+	flex-direction: column;
+}
+
+/* Styling the form title */
+div#form-join-us h1 {
+	font-size: 50px;
+	color: white;
+	text-shadow: 0px 0px 8px white;
+	text-align: center;
+}
+
+/* Styling the various input types */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	border: none;
+	height: 30px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* bottom radius for the inputs */
+input:not([type="radio"]),
+input:not([type="checkbox"]) {
+	border-bottom: 4px solid red;
+}
+
+/* Style for the labels */
+label {
+	width: 100%;
+	display: block;
+	margin: 30px 0 10px 0;
+}
+
+/* Margin for the radio and check box container*/
+div.block {
+	margin: 15px 5px;
+}
+
+/* Margin for the radio checkbox */
+.radio-checkbox {
+	display: inline;
+	margin: 10px 5px;
+}
+
+input.radio-checkbox {
+	margin: 0;
+	width: 50px;
+	height: 15px;
+}
+
+textarea {
+	resize: none;
+	min-width: 300px;
+	height: 200px;
+	display: block;
+	margin-bottom: 20px;
+}

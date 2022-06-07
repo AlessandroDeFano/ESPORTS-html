@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta
+			name="description"
+			content="The about page gives information about the league and the team that worked on the website"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta author="Group 3" />
+		<title>Esports</title>
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/homestyle.css" />
+		<link rel="stylesheet" href="styles/about.css" />
+	</head>
+
+	<body>
+		<!--Header with navbar and logo-->
+		<header>
+			<div id="header-container">
+				<!--Logo-->
+				<div id="logo">
+					<a href="index.html"
+						><img
+							src="./img/esports_logo.png"
+							alt="esports logo"
+							title="esports logo"
+					/></a>
+				</div>
+
+				<!--Hamburger menu for the mobile-->
+				<div id="hamburger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<!--Navigation Bar-->
+				<nav id="navbar">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="news.html">NEWS</a></li>
+						<li><a href="tournaments.html">TOURNAMENTS</a></li>
+						<li><a href="players.html">PLAYERS</a></li>
+						<li><a href="#" id="active">ABOUT</a></li>
+						<li><a href="contacts.html">CONTACTS</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!--Div for the Welcome Section -->
+		<div class="welcome">
+			<div class="aside">
+				<img src="img/pc-gamer.webp" alt="guy playing pc games" />
+				<div class="title">Welcome</div>
+			</div>
+			<div class="about">
+				<h1>We are <span>Esports.com</span></h1>
+				<p>
+					This is an international championship in which all esports
+					teams compete to determine the winner who will receive our
+					cup. We organize tournaments of all games, from League of
+					Legends, Valorant and Rocket League to Call of Duty, FIFA
+					and Fortnite and many others.<br />
+					The Esports.com platform was founded in 2022 by four
+					competitive gaming enthusiasts. <br />
+					Our goal is to push esports and gaming into the mainstream.
+					To reach that goal we work on a lot of different formats and
+					present our motivation on a range of different platforms
+					such as TV and social media. <br />
+					On our website you can find guides, news, interviews and
+					exclusive content to the most popular games in the esports,
+					gaming and streaming industry. You can find our social links
+					at the bottom of our website.
+				</p>
+			</div>
+		</div>
+
+		<main>
+			<!--Section for the dev information-->
+			<h4>Our team</h4>
+			<section class="us">
+				<div class="block">
+					<img
+						src="img/Odyssey_Twisted_Fate_profileicon.webp"
+						alt=""
+					/>
+					<h5>Raul Bercea</h5>
+					<p>Front-end Developer</p>
+				</div>
+				<div class="block">
+					<img
+						src="img/Obsidian_Dragon_Sett_profileicon.webp"
+						alt=""
+					/>
+					<h5>Alessandro De Fano</h5>
+					<p>Front-end Developer</p>
+				</div>
+				<div class="block">
+					<img src="img/High_Noon_Senna_profileicon.webp" alt="" />
+					<h5>Manuela Moraglio</h5>
+					<p>Front-end Developer</p>
+				</div>
+				<div class="block">
+					<img src="img/Odyssey_Yasuo_profileicon.webp" alt="" />
+					<h5>Paolo Gippa</h5>
+					<p>Front-end Developer</p>
+				</div>
+			</section>
+		</main>
+
+		<!--Footer-->
+		<footer>
+			<div id="footer-copyright">
+				<a href="https://www.instagram.com/esport_team_html3/">
+					<img src="./img/instagram_logo.svg" alt="instagram_logo"
+				/></a>
+				<img src="./img/twitch_logo.svg" alt="twitch_logo" />
+				<img src="./img/facebook_logo.svg" alt="facebook_logo" />
+				<img src="./img/youtube_logo.svg" alt="youtube_logo" />
+			</div>
+			<div id="footer-copyright">
+				<script type="text/javascript">
+					copyright = new Date();
+					update = copyright.getFullYear();
+					document.write(
+						"Copyright © 2022-" +
+							update +
+							" - Alessandro De Fano - All rights reserved."
+					);
+				</script>
+			</div>
+		</footer>
+		<!-- Scripts -->
+		<script src="./scripts/main.js"></script>
+	</body>
+</html>

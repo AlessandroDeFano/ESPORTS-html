@@ -1,0 +1,88 @@
+/* gallery.css style for the gallery page */
+
+/* Style for the figure containers */
+
+figure {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	box-shadow: 5px 5px 20px 0px rgb(28, 28, 28);
+	background-color: rgb(28, 28, 28);
+	padding: 5px;
+	border-radius: 20px;
+}
+
+/* Styling the images in the gallery */
+
+div.gallery img {
+	object-fit: cover;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 100%;
+	height: 250px;
+	border-radius: 20px;
+}
+
+/* Style for the image captions */
+
+figcaption {
+	/* margin-top: 5px; */
+	padding: 10px;
+	border-radius: 20px;
+	text-align: center;
+	color: white;
+	opacity: 0.8;
+	background-color: rgb(28, 28, 28);
+	/* border-radius: 15px; */
+	font-family: "Poppins", sans-serif;
+}
+
+/* Style for the page title */
+
+#title {
+	margin-top: 30px;
+	font-family: Franklin Gothic Medium;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+	flex: 0 0 100%;
+}
+
+/* Style for the div containing the picture */
+
+.responsive {
+	padding: 15px;
+	/*float: left;*/
+	width: 33.33%;
+}
+
+/* Making the main section a flexbox */
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* Big screen media query */
+
+@media only screen and (max-width: 850px) {
+	.responsive {
+		width: 50%;
+		margin: 6px 0;
+	}
+	.visible {
+		visibility: hidden;
+	}
+}
+
+/* Small Screen media query */
+
+@media only screen and (max-width: 550px) {
+	.responsive {
+		width: 100%;
+	}
+	.visible {
+		visibility: hidden;
+	}
+}

@@ -1,0 +1,124 @@
+/* News.css style for the news page */
+
+/* background color of the elements */
+#bg-color {
+	background-color: rgb(28, 28, 28);
+}
+
+/* title for each section in news section */
+.section-title-news {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	letter-spacing: 5px;
+	font-size: 30pt;
+	text-align: center;
+	padding-top: 80px;
+	color: white;
+	margin-bottom: 25px;
+}
+
+/* Style for the news container */
+#news-news-container {
+	background-color: rgb(28, 28, 28);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+	padding-bottom: 50px;
+}
+
+/* Title in the news container */
+#news-news-container h3 {
+	font-family: "Poppins", sans-serif;
+	color: white;
+	/*margin-left: 23.5%;*/
+	font-size: 25px;
+	padding: 15px;
+	margin-bottom: 20px;
+	flex: 0 0 72.5%;
+	text-align: center;
+	border-top: 5px solid red;
+	margin-top: 10px;
+}
+
+/* Style for the section titles in the news container */
+#news-news-container .section-title {
+	margin: 30px;
+	color: white;
+}
+
+/* Style for the content of the news */
+.news-news {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 70%;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+/* Sizing of the image in the news content */
+.news-news img {
+	width: 400px;
+	height: 207px;
+}
+
+/* Style for the paragraphs in the news section */
+.news-news p {
+	color: white;
+	font-family: "Poppins", sans-serif;
+	width: 550px;
+	margin-left: 20px;
+	text-align: justify;
+	padding: 5px;
+}
+
+/* Styling for the buttons in the news  */
+.news-news-content button {
+	margin-top: 70px;
+	margin-left: 82%;
+}
+
+/* Style for the news content */
+.news-news-content {
+	display: flex;
+	flex-direction: column;
+	align-items: right;
+	justify-content: space-between;
+}
+
+/* General style for the buttons */
+button {
+	height: 40px;
+	width: 100px;
+	background-color: red;
+	border: none;
+	color: white;
+	font-family: "Poppins", sans-serif;
+	transition: all 300ms ease-in-out;
+}
+
+/* Style for hover on the buttons in the intro section*/
+#intro-section button:hover {
+	color: white;
+	background-color: black;
+	border: 1px solid black;
+}
+
+/* Style for hover on the buttons */
+button:hover {
+	background-color: white;
+	color: black;
+}
+
+/* Hiding the content in the page to be opened later */
+#more {
+	display: none;
+}
+
+#more2 {
+	display: none;
+}
+
+#more3 {
+	display: none;
+}

@@ -1,0 +1,198 @@
+/* players.css Used to style the players page */
+
+/* Bacground color of the main page */
+main {
+	background-color: rgb(28, 28, 28);
+}
+
+/* Style for the page title */
+.title {
+	padding-top: 60px;
+	font-size: 80px;
+	font-family: "Poppins", sans-serif;
+	color: white;
+	text-align: center;
+}
+
+/* Style for the team card */
+.flip-card {
+	background-color: transparent;
+	width: 400px;
+	height: 400px;
+	perspective: 1000px;
+	padding-top: 60px;
+	margin-bottom: 60px;
+	border-radius: 20px;
+}
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	text-decoration: none;
+	background-color: white;
+	border-radius: 20px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+	color: black;
+	/* Center the image in the div */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Style the back side */
+
+.flip-card-back {
+	background-color: rgb(51, 51, 51);
+	color: white;
+	transform: rotateY(180deg);
+	border-radius: 20px;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.flip-card-back h1 {
+	padding: 15px;
+	font-size: 50px;
+	font-family: "Poppins", sans-serif;
+}
+
+.flip-card-back h2 {
+	padding: 10px;
+	font-size: 25px;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Color for the links */
+a {
+	color: white;
+}
+
+/* Hover for the links */
+a:hover {
+	color: red;
+}
+
+/* Color for the active links */
+a:active {
+	color: black;
+}
+
+/* Style for the title of the teams */
+.title-team {
+	font-size: 50px;
+	color: white;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	margin: 40px;
+}
+
+/* Style for the player containers */
+.container-player {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+/* Style for the player card */
+.card-player {
+	background-color: black;
+	width: 200px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: -5px 5px 8px black;
+	margin-left: 20px;
+}
+
+/* Style for the player image */
+.card-player img,
+.card-player-retired img {
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
+}
+
+/* Style for the player information */
+.info-player {
+	color: white;
+	font-family: "Poppins", sans-serif;
+	margin-left: -50px;
+	margin-top: 40px;
+	line-height: 20px;
+}
+
+/* Width of the player paragraphs */
+.info-player p {
+	width: 360px;
+}
+
+/* Style for the spans in the player info */
+.info-player span {
+	font-size: 16px;
+	font-weight: bold;
+	color: red;
+	text-shadow: 0 0 5px black;
+}
+
+/* Style for the retired player cards */
+.card-player-retired {
+	background-color: red;
+	width: 200px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: -5px 5px 8px rgba(152, 5, 5, 0.644);
+	margin-left: 20px;
+}
+
+/* Big screens */
+@media screen and (max-width: 1200px) {
+	.container {
+		flex-direction: column;
+		align-content: center;
+	}
+	.container-player {
+		flex-direction: column;
+	}
+	.container-player p {
+		text-align: center;
+	}
+	.visible {
+		visibility: hidden;
+	}
+}
